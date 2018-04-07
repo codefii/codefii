@@ -1,0 +1,44 @@
+{   "name": "codefii/codefii",
+    "description": "A superfast php framework for web Ninjas",
+    "keywords": [ "superfast framework","codefii"],
+    "homepage": "https://codefii.com",
+    "type": "project",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/codefii/codefii"
+        }
+      ],
+    "authors": [
+        {
+            "name": "Prince E. Darlington",
+            "email": "ekeminyd@gmail.com",
+            "homepage": "https://iamcoderisk.codefii.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0",
+        "phpmailer/phpmailer":"^5.0",
+        "php": "^5.3.3 || ^7.0"
+    },
+    
+    "autoload": {
+        "psr-4": {
+             "Codefii\\": "Codefii/",
+             "Network\\":"vendor/.run/..x/..c/Network/"
+
+        }
+    
+ },
+"extra": {
+    "codefii": {
+        "dont-discover": []
+    }
+},
+"config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+}
+}

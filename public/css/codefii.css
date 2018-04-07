@@ -1,0 +1,18 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'roboto',sans-serif;
+  background: #EBEDEF;
+}
+.container{
+  width: 20%;
+  margin:0 auto;
+  padding-top:200px;
+}
+.cf-img{
+  max-width: 200px;
+  margin:0 auto;
+}
