@@ -9,26 +9,28 @@
  */
 namespace Network\Location;
 
- class Redirect
+final class Redirect
 {
-  public static function to($location=null)
-  {
-    if($location)
-    {
-      if(is_string($location))
-      {
-        try{
-            header('Location:'.$location);
-           exit();
-            throw new RuntimeException();
+  protected static $with=null;
+  public function __construct(){
+    ob_start();
+  }
+  public  function to($url,$param=array()){
 
-        }catch(LogicExcception $e){
-            die($e->getMessage());
-        }finally{
-            header('Location:'.$location);
-            exit();
+        if(count($param)==1){
+          foreach($param as $param_key=>$param_value){
+            if(!headers_sent()) {
+              header("Location:".$url."/".urlencode($param_value), TRUE, 302);
+              exit;
+            }
+            exit('<meta http-equiv="refresh" content="0; url='.$url."/".urlencode($param_value).'"/>');
+          }
+        }else if(count($param)== 0 || empty(count($param))){
+          if(!headers_sent()) {
+            header("Location:".$url, TRUE, 302);
+            exit;
+          }
+          exit('<meta http-equiv="refresh" content="0; url='.$url.'"/>');
         }
-      }
-    }
   }
 }
