@@ -21,7 +21,18 @@ if($session->isRegistered()){
   echo $session->get('user');
 }
 ```
-
+## using redirect for routing
+<p> in a case where you want to redirect to a certain page with some parameter e.g https://codefii.com/home/123, with ***home***  being the
+sub route and ***123*** being the route parameter this is how to achieve it.</p>
+```
+<?php
+Redirect::to('home',['paramater'=>123]);
+```
+<p> Or if you wish to redirect to a sub page without passing a route parameter you would have to the following:<p>
+```
+<?php
+Redirect::to('home'); 
+```
 ## Directory Structure
 <p>
  <br/>
