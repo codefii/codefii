@@ -10,8 +10,17 @@
 ## About Codefii
 Codefii is a superfast micro-framework, the first of its kind delivered as a general purpose framework to give acces and control and security to web Ninjas. Just as the name implies, codefii is a general purpose framework, it's doesn't force you to write in a particular pattern, once you have a prior knowledge of php you are good to go.
 
-- [Simple and straight forward](https://codefii.com/documentation).
-
+## Documentation
+# using session
+```
+<?php
+$session = new Session();
+$session->set('user','prince darlington');
+$session->register();
+if($session->isRegistered()){
+  echo $session->get('user');
+}
+```
 
 ## Directory Structure
 <p>
@@ -36,5 +45,5 @@ If you discover any vulnerability or have any issues you would like to report ki
 ## License
 The Codefii  framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 ## Acknowledgement
-The Codefii team would like to thank <a href="http://soodarsoft.com">Soodaroft</a>, 
+The Codefii team would like to thank <a href="http://soodarsoft.com">Soodaroft</a>,
 all the contributors to the Codefii project and you, the Codefii user.
