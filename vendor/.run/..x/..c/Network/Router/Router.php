@@ -14,6 +14,7 @@ namespace Network\Router;
  *
  * PHP version 5.6
  */
+ use Network\View\View;
 class Router
 {
 
@@ -128,13 +129,17 @@ class Router
                     $controller_object->$action();
 
                 } else {
-                    echo "Method $action (in controller $controller) not found";
+                    $error = "Method $action (in controller
+                     $controller) not found";
+                     View::render('System/notfound',['error'=>$error]);
                 }
             } else {
-                echo "Controller class $controller not found";
+                $error ="Controller class $controller not found";
+                View::render('System/notfound',['error'=>$error]);
             }
         } else {
-            echo 'No route matched.';
+                $error ="Route or page not found";
+            View::render('System/notfound',['error'=>$error]);
         }
     }
 
