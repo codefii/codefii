@@ -18,18 +18,22 @@
         }
     ],
     "require": {
+        "php": "^5.3.3 || ^7.0",
+        "phpmailer/phpmailer": "^5.0",
+        "phpunit/phpunit": "3.7.*",
+        "symfony/console": "^3.4",
         "twig/twig": "^2.0",
-        "phpmailer/phpmailer":"^5.0",
-        "php": "^5.3.3 || ^7.0"
+        "vlucas/phpdotenv": "^2.4"
     },
-    
+
     "autoload": {
         "psr-4": {
-             "Codefii\\": "Codefii/",
-             "Network\\":"vendor/.run/..x/..c/Network/"
-
+            "Codefii\\": "Codefii/",
+            "Network\\":"vendor/.run/..x/..c/Network/",
+            "Loader\\":"../Codefii/",
+            "Tests\\": "tests/",
+              "Dotenv\\": "src/"
         }
-    
  },
 "extra": {
     "codefii": {

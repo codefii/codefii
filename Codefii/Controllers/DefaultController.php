@@ -2,10 +2,15 @@
 namespace Codefii\Controllers;
 use Network\Controller\Controller;
 use Network\View\View;
+use Network\Registers\Mappers;
+
 class DefaultController extends Controller {
   public function index()
   {
-    View::render('Default/default');
-    View::render('footer/footer');
+    $dotenv = new \Dotenv\Dotenv("../");
+    $dotenv->load();
+
+    echo $_ENV['SECRET_KEY'];
   }
+
 }

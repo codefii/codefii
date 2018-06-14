@@ -93,7 +93,7 @@ class Validation
   {
     return $this->_errors;
   }
-  public function isPassed()
+  public function passes()
   {
     return $this->_passed;
   }

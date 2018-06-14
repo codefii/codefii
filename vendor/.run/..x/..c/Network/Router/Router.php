@@ -29,6 +29,7 @@ class Router
      * @var array
      */
     protected $params = [];
+    protected $p;
 
     /**
      * Add a route to the routing table
@@ -101,6 +102,8 @@ class Router
     {
         return $this->params;
     }
+
+
 
     /**
      * Dispatch the route, creating the controller object and running the

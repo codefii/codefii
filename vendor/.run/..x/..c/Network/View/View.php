@@ -28,10 +28,10 @@ class View
     {
         extract($args, EXTR_SKIP);
 
-        $file = "../Codefii/Views/$view.php";  // relative to Core directory
+        $file = "../Codefii/Templates/$view.php";
 
         if (is_readable($file)) {
-            require $file;
+            require_once $file;
         } else {
             echo "$file not found";
         }
@@ -50,7 +50,7 @@ class View
         static $twig = null;
 
         if ($twig === null) {
-            $loader = new \Twig_Loader_Filesystem('../Codefii/Views');
+            $loader = new \Twig_Loader_Filesystem('../Codefii/Templates');
             $twig = new \Twig_Environment($loader);
         }
 

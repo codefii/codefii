@@ -1,30 +1,23 @@
 <?php
-/*
-MIT License
-
-Copyright (c) 2018 Prince E. Darlington <?ekeminyd@gmail.com?>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
+/**
+ * [$router description]
+ * @var Network
+ */
 $router = new Network\Router\Router();
-$router->routes('',['controller'=>'DefaultController','action'=>'index']);
-$router->routes('{controller}/{action}');
-$router->routes('{controller}/{action}/{id:\d+}');
-$router->routes('admin/{controller}/{action}', ['namespace' => 'Admin']);
-$router->dispatch($_SERVER['QUERY_STRING']);
+/**
+ * [$router->routes description]
+ * make sure you don't start your route name with a controller
+ */
+
+$router->routes('/',['controller'=>'DefaultController','action'=>'index']);
+/**
+ * [$router->routes description]
+ * @var [codefii default admin route]
+ */
+// $router->routes('{controller}/{action}');
+$router->routes('/admin/login',['namespace'=>'Sys','controller'=>'FiiAController','action'=>'login']);
+$router->routes('/admin/addUser',['namespace'=>'Sys','controller'=>'FiiAController','action'=>'addUser']);
+$router->routes('/admin',['namespace'=>'Sys','controller'=>'FiiAController','action'=>'baseOffice']);
+$router->routes('/admin/logout',['namespace'=>'Sys','controller'=>'FiiAController','action'=>'exitOffice']);
+$router->routes('/admin/{controller}/{post:([a-zA-Z0-9])*}',['namespace'=>'Sys','controller'=>'Posts','action'=>'index']);
+$router->routes('/admin/{controller}/{post:([a-zA-Z0-9])*}',['namespace'=>'Sys','controller'=>'AddPosts','action'=>'index']);
