@@ -1,7 +1,4 @@
 
 <?php
-/**
- * [this is meant for the built in server]
- * @var Server
- */
-require 'vendor' . DIRECTORY_SEPARATOR.'.run'.DIRECTORY_SEPARATOR.'..x'.DIRECTORY_SEPARATOR.'..c'.DIRECTORY_SEPARATOR.'Network'.DIRECTORY_SEPARATOR.'Fii'.DIRECTORY_SEPARATOR.'runner.php';
+require './vendor/autoload.php';
+$cli = new \Codefii\Cli\FiiCli();

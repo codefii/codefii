@@ -28,10 +28,8 @@
 
     "autoload": {
         "psr-4": {
-            "Codefii\\": "Codefii/",
-            "Network\\":"vendor/.run/..x/..c/Network/",
-            "Loader\\":"../Codefii/",
-            "Tests\\": "tests/",
+            "App\\": "app/",
+            "Codefii\\": "vendor/core/Codefii/",
               "Dotenv\\": "src/"
         }
  },

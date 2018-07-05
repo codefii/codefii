@@ -6,4 +6,4 @@
  * @author   Prince E. Darlington
  *
  */
-require 'public' . DIRECTORY_SEPARATOR . 'index.php';
+ require 'public' . DIRECTORY_SEPARATOR . 'index.php';

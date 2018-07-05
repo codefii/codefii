@@ -15,7 +15,6 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
         'T' => 
         array (
             'Twig\\' => 5,
-            'Tests\\' => 6,
         ),
         'S' => 
         array (
@@ -29,14 +28,6 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
         array (
             'Psr\\Log\\' => 8,
         ),
-        'N' => 
-        array (
-            'Network\\' => 8,
-        ),
-        'L' => 
-        array (
-            'Loader\\' => 7,
-        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -45,16 +36,16 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
         array (
             'Codefii\\' => 8,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
-        ),
-        'Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -80,21 +71,18 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
-        'Network\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/.run/..x/..c/Network',
-        ),
-        'Loader\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/../Codefii',
-        ),
         'Dotenv\\' => 
         array (
-            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+            0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'Codefii\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Codefii',
+            0 => __DIR__ . '/..' . '/core/Codefii',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
@@ -109,12 +97,33 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
     );
 
     public static $classMap = array (
-        'Codefii\\Controllers\\DefaultController' => __DIR__ . '/../..' . '/Codefii/Controllers/DefaultController.php',
-        'Codefii\\Controllers\\Sys\\AddPosts' => __DIR__ . '/../..' . '/Codefii/Controllers/Sys/AddPosts.php',
-        'Codefii\\Controllers\\Sys\\FiiAController' => __DIR__ . '/../..' . '/Codefii/Controllers/Sys/FiiAController.php',
-        'Codefii\\Controllers\\Sys\\Posts' => __DIR__ . '/../..' . '/Codefii/Controllers/Sys/Posts.php',
-        'Codefii\\Models\\Main' => __DIR__ . '/../..' . '/Codefii/Models/Main.php',
-        'Codefii\\Models\\User' => __DIR__ . '/../..' . '/Codefii/Models/User.php',
+        'App\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/controllers/Controller.php',
+        'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
+        'App\\Controllers\\Sys\\AddPosts' => __DIR__ . '/../..' . '/app/controllers/Sys/AddPosts.php',
+        'App\\Controllers\\Sys\\FiiAController' => __DIR__ . '/../..' . '/app/controllers/Sys/FiiAController.php',
+        'App\\Controllers\\Sys\\PostsController' => __DIR__ . '/../..' . '/app/controllers/Sys/PostsController.php',
+        'Codefii\\Cli\\AdminCreator' => __DIR__ . '/..' . '/core/Codefii/Cli/AdminCreator.php',
+        'Codefii\\Cli\\FiiCli' => __DIR__ . '/..' . '/core/Codefii/Cli/FiiCli.php',
+        'Codefii\\Controller\\BaseController' => __DIR__ . '/..' . '/core/Codefii/Controller/BaseController.php',
+        'Codefii\\Entity\\Auth\\FiiAuth' => __DIR__ . '/..' . '/core/Codefii/Entity/auth/FiiAuth.php',
+        'Codefii\\Entity\\Orm\\Database' => __DIR__ . '/..' . '/core/Codefii/Entity/orm/Database.php',
+        'Codefii\\Entity\\Orm\\Fiirm' => __DIR__ . '/..' . '/core/Codefii/Entity/orm/Fiirm.php',
+        'Codefii\\Hash\\Hash' => __DIR__ . '/..' . '/core/Codefii/Hash/Hash.php',
+        'Codefii\\Http\\Input' => __DIR__ . '/..' . '/core/Codefii/Http/Input.php',
+        'Codefii\\Http\\Redirect' => __DIR__ . '/..' . '/core/Codefii/Http/Redirect.php',
+        'Codefii\\Http\\Request' => __DIR__ . '/..' . '/core/Codefii/Http/Request.php',
+        'Codefii\\Http\\Response' => __DIR__ . '/..' . '/core/Codefii/Http/Response.php',
+        'Codefii\\Mapper\\ModelValidator\\ModelValidator' => __DIR__ . '/..' . '/core/Codefii/Mapper/ModelValidator/ModelValidator.php',
+        'Codefii\\Mapper\\Process\\LeaveOffice' => __DIR__ . '/..' . '/core/Codefii/Mapper/Process/LeaveOffice.php',
+        'Codefii\\Mapper\\Process\\Logger' => __DIR__ . '/..' . '/core/Codefii/Mapper/Process/Logger.php',
+        'Codefii\\Mapper\\Process\\Model\\Admin' => __DIR__ . '/..' . '/core/Codefii/Mapper/Process/Model/Admin.php',
+        'Codefii\\Mapper\\Process\\Office' => __DIR__ . '/..' . '/core/Codefii/Mapper/Process/Office.php',
+        'Codefii\\Mapper\\Process\\Runner' => __DIR__ . '/..' . '/core/Codefii/Mapper/Process/Runner.php',
+        'Codefii\\Routing\\Router' => __DIR__ . '/..' . '/core/Codefii/Routing/Router.php',
+        'Codefii\\Session\\Session' => __DIR__ . '/..' . '/core/Codefii/Session/Session.php',
+        'Codefii\\Support\\Porter' => __DIR__ . '/..' . '/core/Codefii/Support/Porter.php',
+        'Codefii\\Validation\\Validation' => __DIR__ . '/..' . '/core/Codefii/Validation/Validation.php',
+        'Codefii\\View\\View' => __DIR__ . '/..' . '/core/Codefii/View/View.php',
         'Dotenv\\Dotenv' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Dotenv.php',
         'Dotenv\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ExceptionInterface.php',
         'Dotenv\\Exception\\InvalidCallbackException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/InvalidCallbackException.php',
@@ -127,26 +136,6 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
-        'Network\\Controller\\Controller' => __DIR__ . '/..' . '/.run/..x/..c/Network/Controller/Controller.php',
-        'Network\\Cookie\\Cookie' => __DIR__ . '/..' . '/.run/..x/..c/Network/Cookie/Cookie.php',
-        'Network\\Error\\GeneralError' => __DIR__ . '/..' . '/.run/..x/..c/Network/Error/GeneralError.php',
-        'Network\\Hash\\Hash' => __DIR__ . '/..' . '/.run/..x/..c/Network/Hash/Hash.php',
-        'Network\\Hash\\RandomKey' => __DIR__ . '/..' . '/.run/..x/..c/Network/Hash/RandomKey.php',
-        'Network\\Location\\Redirect' => __DIR__ . '/..' . '/.run/..x/..c/Network/Location/Redirect.php',
-        'Network\\Mapper\\ModelValidator\\ModelValidator' => __DIR__ . '/..' . '/.run/..x/..c/Network/Mapper/ModelValidator/ModelValidator.php',
-        'Network\\Mapper\\Process\\LeaveOffice' => __DIR__ . '/..' . '/.run/..x/..c/Network/Mapper/Process/LeaveOffice.php',
-        'Network\\Mapper\\Process\\Logger' => __DIR__ . '/..' . '/.run/..x/..c/Network/Mapper/Process/Logger.php',
-        'Network\\Mapper\\Process\\Model\\Adder' => __DIR__ . '/..' . '/.run/..x/..c/Network/Mapper/Process/Model/Adder.php',
-        'Network\\Mapper\\Process\\Office' => __DIR__ . '/..' . '/.run/..x/..c/Network/Mapper/Process/Office.php',
-        'Network\\Mapper\\Process\\Runner' => __DIR__ . '/..' . '/.run/..x/..c/Network/Mapper/Process/Runner.php',
-        'Network\\ORM\\Auth' => __DIR__ . '/..' . '/.run/..x/..c/Network/ORM/Auth.php',
-        'Network\\ORM\\DBLoader\\Config' => __DIR__ . '/..' . '/.run/..x/..c/Network/ORM/DBLoader/Config.php',
-        'Network\\ORM\\Fiirm' => __DIR__ . '/..' . '/.run/..x/..c/Network/ORM/Fiirm.php',
-        'Network\\Request\\Request' => __DIR__ . '/..' . '/.run/..x/..c/Network/Request/Request.php',
-        'Network\\Router\\Router' => __DIR__ . '/..' . '/.run/..x/..c/Network/Router/Router.php',
-        'Network\\Session\\Session' => __DIR__ . '/..' . '/.run/..x/..c/Network/Session/Session.php',
-        'Network\\Validation\\Validation' => __DIR__ . '/..' . '/.run/..x/..c/Network/Validation/Validation.php',
-        'Network\\View\\View' => __DIR__ . '/..' . '/.run/..x/..c/Network/View/View.php',
         'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
         'PHPMailerOAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauth.php',
         'PHPMailerOAuthGoogle' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
@@ -611,7 +600,6 @@ class ComposerStaticInitbfdcd393580ac0b7d822b4a29366cad9
         'Symfony\\Component\\Yaml\\Yaml' => __DIR__ . '/..' . '/symfony/yaml/Yaml.php',
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
-        'Tests\\DemoTest' => __DIR__ . '/../..' . '/tests/DemoTest.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'Twig\\Cache\\CacheInterface' => __DIR__ . '/..' . '/twig/twig/src/Cache/CacheInterface.php',
         'Twig\\Cache\\FilesystemCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/FilesystemCache.php',
