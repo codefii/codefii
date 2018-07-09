@@ -8,12 +8,12 @@ use Codefii\Support\Porter;
  * Controller parent
  */
 use BadMethodCallException;
-abstract class BaseController
+class BaseController
 {
     private $layout;
-    public $datas =[];
 
-     protected $export;
+        public $header,$footer;
+     protected $export,$partials;
 
     protected $middleware = [];
 
@@ -28,6 +28,7 @@ abstract class BaseController
      */
     public function __construct($route_params)
     {
+      // $n = new BaseView();
         $this->route_params = $route_params;
     }
     public function __call($name, $args)
@@ -40,7 +41,8 @@ abstract class BaseController
               $this->after();
           }
       } else {
-          echo "Method $method not found in controller " . get_class($this);
+          return $this->View('System/notfound',["error"=>
+          "Method $method not found in controller " . get_class($this)]);
       }
   }
 
@@ -89,34 +91,56 @@ abstract class BaseController
         return call_user_func_array([$this, $method], $parameters);
     }
 
-    //
-    // public function __call($method, $parameters)
-    // {
-    //     throw new BadMethodCallException("Method [{$method}] does not
-    //      exist on [".get_class($this).'].');
-    // }
-
-
 
     final protected function setLayout(string $layout)
     {
         $this->layout = $layout;
     }
 
-    final protected function view(string $file, array $data = [])
+    final protected function view($params,$data = [])
     {
-        extract($data, EXTR_SKIP);
-
-        $file = "../App/templates/$file.php";
-        if (is_readable($file)) {
-            require_once $file;
+          if(is_array($params)){
+            if(count($params)==2){
+              for($i=1; $i<count($params); $i++){
+                extract($data, EXTR_SKIP);
+              $file = "../App/templates/".$params[0].".php";
+              if (is_readable($file)) {
+                require_once "../App/templates/".$params[1].".php";
+                $this->getHeader();
+                  require_once $file;
+                    $this->getFooter();
+              }
+            }
+          }
         } else {
             echo $file."not found";
         }
         exit();
     }
 
-
+    public function setHeader($header){
+      $this->header = $header;
+    }
+    public function setFooter($footer){
+        $this->footer = $footer;
+      }
+    public function getHeader(){
+      return require "../App/templates/".$this->header.".php";
+    }
+    public function getFooter(){
+      return require "../App/templates/".$this->footer.".php";
+    }
+    public function url($link){
+      if(!empty($link)){
+        if(is_array($link)){
+          if(count($link)==1){
+            foreach($link as $url=>$value){
+              return "<a href='/$url'>".$value."</a>";
+            }
+          }
+        }
+      }
+    }
     final protected function header(string $content, string $type = null)
     {
         Response::header($content, $type);
