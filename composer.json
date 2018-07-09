@@ -21,6 +21,7 @@
         "php": "^5.3.3 || ^7.0",
         "phpmailer/phpmailer": "^5.0",
         "phpunit/phpunit": "3.7.*",
+        "splitbrain/php-cli": "^1.1",
         "symfony/console": "^3.4",
         "twig/twig": "^2.0",
         "vlucas/phpdotenv": "^2.4"
@@ -28,8 +29,8 @@
 
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Codefii\\": "vendor/core/Codefii/",
+            "App\\": "App/",
+            "Codefii\\":"vendor/framework/core/src/Network/",
               "Dotenv\\": "src/"
         }
  },

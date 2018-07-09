@@ -14,6 +14,6 @@ return array(
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Dotenv\\' => array($baseDir . '/src', $vendorDir . '/vlucas/phpdotenv/src'),
-    'Codefii\\' => array($vendorDir . '/core/Codefii'),
-    'App\\' => array($baseDir . '/app'),
+    'Codefii\\' => array($vendorDir . '/framework/core/src/Network'),
+    'App\\' => array($baseDir . '/App'),
 );
