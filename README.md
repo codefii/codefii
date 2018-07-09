@@ -15,11 +15,13 @@ Codefii is a stunningly fast high-level  web framework that encourages rapid dev
 Under the hood, codefii has a generic admin called **FiiA** that helps in managing database records. it's somewhat known as active admin.
 ___
 
+
+
 ### Getting started
 
 Before anything else, you need a copy of composer installed on local machine through [composer](http://getcomposer.org).For existing applications you can run the following:
 
-``` 
+```
 composer create-project --prefer-dist codefii/codefii myApp
 ```
 
