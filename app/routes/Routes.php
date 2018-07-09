@@ -5,7 +5,7 @@
  * @var Network
  */
 $router = new Codefii\Routing\Router();
-$router->routes('/',['Test@hello']);
+$router->routes('/',['Sys\\FiiA@ready']);
 
 
 
