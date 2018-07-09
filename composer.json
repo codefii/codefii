@@ -24,8 +24,7 @@
         "splitbrain/php-cli": "^1.1",
         "symfony/console": "^3.4",
         "twig/twig": "^2.0",
-        "vlucas/phpdotenv": "^2.4",
-        "codefii/codefii":"^1.1.1"
+        "vlucas/phpdotenv": "^2.4"
     },
 
     "autoload": {
