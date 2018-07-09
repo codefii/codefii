@@ -107,7 +107,7 @@ abstract class BaseController
     {
         extract($data, EXTR_SKIP);
 
-        $file = "App/templates/$file.php";
+        $file = "../App/templates/$file.php";
         if (is_readable($file)) {
             require_once $file;
         } else {
