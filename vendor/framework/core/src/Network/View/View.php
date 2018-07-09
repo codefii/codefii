@@ -29,12 +29,12 @@ class View
     {
         extract($args, EXTR_SKIP);
         extract(self::$datas, EXTR_SKIP);
-        self::$file = "../App/templates/$view.php";
+        $file = "../App/templates/$view.php";
 
         if (is_readable(self::$file)) {
-            require_once require_once($_SERVER['DOCUMENT_ROOT']).$file;
+            require_once $file;
         } else {
-            echo self::$file."not found";
+            echo self::$file."<h2>404 not found</h2>";
         }
     }
 
