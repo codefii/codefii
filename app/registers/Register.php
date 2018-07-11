@@ -1,4 +1,4 @@
 <?php
 $Registers =[
-  "Main"=>"books"
+  // "Main"=>"books" example
 ];

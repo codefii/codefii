@@ -1,6 +1,0 @@
-echo "<table><tr>
-<th>".$key."</th></tr>"."<tr>
-      <td>
-      ".$value->$key."
-      </td>
-      </tr></table>";

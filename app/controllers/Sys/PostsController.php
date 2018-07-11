@@ -10,9 +10,9 @@ class PostsController extends Controller {
   public function index(){
       $office =new Office();
       $model = new ModelValidator();
-      View::render("System/Admin/header/header",['fiidata'=>Office::Strict()]);
+      View::render("System/Admin/header/header");
       View::render("System/Admin/office/viewposts",
-      ['posts'=>$office->getPost($this->route_params='books'),'table'=>$this->route_params='books']);
+      ['posts'=>$office->getPost($this->route_params['view']),'table'=>$this->route_params['view']]);
       }
 
   public function deleteAction(){

@@ -11,11 +11,11 @@ use Codefii\Http\Response;
 use  Codefii\Session\Session;
 use Codefii\Checker\SessionChecker;
 class FiiAController extends Controller {
-  // public function login(){
-  // new Logger();
-  //   View::render("System/Admin/header/lheader");
-  //   View::render("System/Admin/landing/index");
-  // }
+  public function login(){
+  new Logger();
+    View::render("System/Admin/header/Initial");
+    View::render("System/Admin/landing/login");
+  }
   public function addUser(){
     new Runner();
     View::render("System/Admin/header/header");
@@ -24,13 +24,13 @@ class FiiAController extends Controller {
   }
   public function baseOffice(){
     $FiiA = new ModelValidator();
-    View::render("System/Admin/header/header",['fiidata'=>Office::Strict()]);
+    View::render("System/Admin/header/header");
     View::render("System/Admin/office/home",['data'=>$FiiA->getDatas()]);
   }
   public function exitOffice(){
    new LeaveOffice();
   }
   final public function ready(){
-    return $this->view("System/Admin/landing/ready");
+  View::render('System/Admin/landing/ready');
   }
 }

@@ -1,5 +1,46 @@
 [
     {
+        "name": "codefii/framework",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codefii/framework.git",
+            "reference": "de884632792bc15f076e8e10deda6b9f284081e8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codefii/framework/zipball/de884632792bc15f076e8e10deda6b9f284081e8",
+            "reference": "de884632792bc15f076e8e10deda6b9f284081e8",
+            "shasum": ""
+        },
+        "time": "2018-07-10T18:39:33+00:00",
+        "type": "project",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Codefii\\": "src/Network/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Prince E. Darlington",
+                "email": "ekeminyd@gmail.com",
+                "homepage": "https://iamcoderisk.codefii.com"
+            }
+        ],
+        "description": "A superfast php framework for web Ninjas",
+        "homepage": "https://codefii.com",
+        "keywords": [
+            "codefii",
+            "superfast framework"
+        ]
+    },
+    {
         "name": "phpmailer/phpmailer",
         "version": "v5.2.26",
         "version_normalized": "5.2.26.0",
@@ -463,237 +504,6 @@
         ]
     },
     {
-        "name": "psr/log",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/php-fig/log.git",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2016-10-10T12:19:37+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Psr\\Log\\": "Psr/Log/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
-            }
-        ],
-        "description": "Common interface for logging libraries",
-        "homepage": "https://github.com/php-fig/log",
-        "keywords": [
-            "log",
-            "psr",
-            "psr-3"
-        ]
-    },
-    {
-        "name": "splitbrain/php-cli",
-        "version": "1.1.3",
-        "version_normalized": "1.1.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/splitbrain/php-cli.git",
-            "reference": "ba75e66ca1b1f2e2c183d4f067f067857e3d5a9c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/splitbrain/php-cli/zipball/ba75e66ca1b1f2e2c183d4f067f067857e3d5a9c",
-            "reference": "ba75e66ca1b1f2e2c183d4f067f067857e3d5a9c",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.5.*"
-        },
-        "suggest": {
-            "psr/log": "Allows you to make the CLI available as PSR-3 logger"
-        },
-        "time": "2018-05-10T07:29:46+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "splitbrain\\phpcli\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Andreas Gohr",
-                "email": "andi@splitbrain.org"
-            }
-        ],
-        "description": "Easy command line scripts for PHP with opt parsing and color output. No dependencies",
-        "keywords": [
-            "argparse",
-            "cli",
-            "command line",
-            "console",
-            "getopt",
-            "optparse",
-            "terminal"
-        ]
-    },
-    {
-        "name": "symfony/console",
-        "version": "v3.4.11",
-        "version_normalized": "3.4.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/console.git",
-            "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/36f83f642443c46f3cf751d4d2ee5d047d757a27",
-            "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "symfony/debug": "~2.8|~3.0|~4.0",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
-        "conflict": {
-            "symfony/dependency-injection": "<3.4",
-            "symfony/process": "<3.3"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~3.3|~4.0",
-            "symfony/dependency-injection": "~3.4|~4.0",
-            "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
-            "symfony/lock": "~3.4|~4.0",
-            "symfony/process": "~3.3|~4.0"
-        },
-        "suggest": {
-            "psr/log-implementation": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/lock": "",
-            "symfony/process": ""
-        },
-        "time": "2018-05-16T08:49:21+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Console\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/debug",
-        "version": "v3.4.11",
-        "version_normalized": "3.4.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/debug.git",
-            "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/debug/zipball/b28fd73fefbac341f673f5efd707d539d6a19f68",
-            "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "psr/log": "~1.0"
-        },
-        "conflict": {
-            "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
-        },
-        "require-dev": {
-            "symfony/http-kernel": "~2.8|~3.0|~4.0"
-        },
-        "time": "2018-05-16T14:03:39+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Debug\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Debug Component",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "symfony/polyfill-ctype",
         "version": "v1.8.0",
         "version_normalized": "1.8.0.0",
@@ -813,8 +623,8 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v2.8.41",
-        "version_normalized": "2.8.41.0",
+        "version": "v2.8.42",
+        "version_normalized": "2.8.42.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
@@ -894,7 +704,7 @@
                 "dev-master": "2.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Twig_": "lib/"
@@ -933,30 +743,30 @@
     },
     {
         "name": "vlucas/phpdotenv",
-        "version": "v2.4.0",
-        "version_normalized": "2.4.0.0",
+        "version": "v2.5.0",
+        "version_normalized": "2.5.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/vlucas/phpdotenv.git",
-            "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+            "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
-            "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
+            "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.9"
         },
         "require-dev": {
-            "phpunit/phpunit": "^4.8 || ^5.0"
+            "phpunit/phpunit": "^4.8.35 || ^5.0"
         },
-        "time": "2016-09-01T10:05:43+00:00",
+        "time": "2018-07-01T10:25:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.4-dev"
+                "dev-master": "2.5-dev"
             }
         },
         "installation-source": "dist",
@@ -967,7 +777,7 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD-3-Clause-Attribution"
+            "BSD-3-Clause"
         ],
         "authors": [
             {

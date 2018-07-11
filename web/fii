@@ -1,4 +1,0 @@
-
-<?php
-require '../vendor/autoload.php';
-$cli = new \Codefii\Cli\FiiCli();
