@@ -27,14 +27,20 @@ composer create-project --prefer-dist codefii/codefii myApp
 
 ### Running your project
 
-After a succesful installation of the codefii components, the next thing is to navigate to your app directory and serve / run your app by using:
+After a successful installation of the codefii components, the next thing is to navigate to your app directory and serve / run your app by using:
 
 ```
 cd myApp
-php fii
-run:app
+php fii --serve
 ```
-then visit your browser abd type:
+then visit your browser and type:
 ```
-localhost:3039
+localhost:8080
 ```
+### Running App with a Dynamic Port
+```
+cd myApp
+php fii --serve --port=your_port_number
+```
+### Documentation
+The complete documentation is found on [Codefii Official Website](https://codefii.com/documentaion)
