@@ -22,7 +22,7 @@ ___
 Before anything else, you need a copy of composer installed on local machine through [composer](http://getcomposer.org).For existing applications you can run the following:
 
 ```
-composer create-project --prefer-dist codefii/codefii myApp
+composer create-project --prefer-dist codefii/codefii=dev-master myApp
 ```
 
 ### Running your project
