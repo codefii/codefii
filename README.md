@@ -1,4 +1,4 @@
-<p align="center"><img src="http://www.codefii.com/public/images/codefii.png" width="60" height=""60"/></p>
+<p align="center"><img src="https://www.codefii.com/public/images/codefii.png" width="60" height=""60"/></p>
 
 <p align="center">
 <a href="https://packagist.org/packages/codefii/codefii"><img src="https://poser.pugx.org/codefii/codefii/v/stable" alt="Stable"></a>
