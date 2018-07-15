@@ -4,6 +4,7 @@
     "homepage": "https://codefii.com",
     "type": "project",
     "license": "MIT",
+ 
     "repositories": [
         {
             "type": "vcs",
@@ -14,11 +15,12 @@
         {
             "name": "Prince E. Darlington",
             "email": "ekeminyd@gmail.com",
-            "homepage": "https://iamcoderisk.codefii.com"
+            "homepage": "https://twitter.com/iamcoderisk"
         }
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
+        "codefii/core": "1.0",
         "phpmailer/phpmailer": "^5.0",
         "phpunit/phpunit": "3.7.*",
         "twig/twig": "^2.0",
@@ -28,8 +30,9 @@
     "autoload": {
         "psr-4": {
             "App\\": "App/",
-            "Codefii\\":"src/Network/",
-              "Dotenv\\": "src/"
+              "Dotenv\\": "src/",
+              "Codefii\\":"src/Network/"
+
         }
  },
 "extra": {
