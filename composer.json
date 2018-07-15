@@ -4,7 +4,6 @@
     "homepage": "https://codefii.com",
     "type": "project",
     "license": "MIT",
- 
     "repositories": [
         {
             "type": "vcs",
@@ -20,7 +19,6 @@
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
-        "codefii/core": "^1.0",
         "phpmailer/phpmailer": "^5.0",
         "phpunit/phpunit": "3.7.*",
         "twig/twig": "^2.0",
@@ -40,9 +38,9 @@
         "dont-discover": []
     }
 },
-"config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-}
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
 }
