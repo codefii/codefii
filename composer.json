@@ -4,6 +4,7 @@
     "homepage": "https://codefii.com",
     "type": "project",
     "license": "MIT",
+ 
     "repositories": [
         {
             "type": "vcs",
@@ -14,12 +15,12 @@
         {
             "name": "Prince E. Darlington",
             "email": "ekeminyd@gmail.com",
-            "homepage": "https://iamcoderisk.codefii.com"
+            "twitter": "https://twitter.com/iamcoderisk"
         }
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
-        "codefii/framework": "dev-master",
+        "codefii/core": "^1.1",
         "phpmailer/phpmailer": "^5.0",
         "phpunit/phpunit": "3.7.*",
         "twig/twig": "^2.0",
