@@ -1,9 +1,8 @@
-<p align="center"><img src="http://www.codefii.com/public/images/codefii.png" width="60" height=""60"/></p>
-
+<p align="center"><img src="https://www.codefii.com/images/codefii.png" width="60" height=""60"/></p>
 <p align="center">
 <a href="https://packagist.org/packages/codefii/codefii"><img src="https://poser.pugx.org/codefii/codefii/v/stable" alt="Stable"></a>
 <a href="https://packagist.org/packages/codefii/codefii"><img src="https://poser.pugx.org/codefii/codefii/downloads" alt="Download"></a>
-<a href="https://packagist.org/packages/codefii/codefii"><img src="https://poser.pugx.org/codefii/codefii/v/unstable" alt="Umstable"></a>
+<a href="https://packagist.org/packages/codefii/codefii"><img src="https://poser.pugx.org/codefii/codefii/v/unstable" alt="Ustable"></a>
 <a href="https://packagist.org/packages/codefii/codefii"><img src="https://poser.pugx.org/codefii/codefii/license" alt="License"></a>
 </p>
 
