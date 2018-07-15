@@ -14,7 +14,7 @@
         {
             "name": "Prince E. Darlington",
             "email": "ekeminyd@gmail.com",
-            "twitter": "https://twitter.com/iamcoderisk"
+            "homepage": "https://iamcoderisk.codefii.com"
         }
     ],
     "require": {
@@ -28,9 +28,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "App/",
-              "Dotenv\\": "src/",
-              "Codefii\\":"src/Network/"
-
+            "Codefii\\":"src/Network/",
+              "Dotenv\\": "src/"
         }
  },
 "extra": {
@@ -38,9 +37,9 @@
         "dont-discover": []
     }
 },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
-    }
+"config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+}
 }
