@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d0070e351b63a29e17cc83f922c3313",
+    "content-hash": "c573c0bba4dbc7bde1a30a8fe58e908d",
     "packages": [
         {
-            "name": "codefii/framework",
-            "version": "dev-master",
+            "name": "codefii/core",
+            "version": "v1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/codefii/framework.git",
-                "reference": "de884632792bc15f076e8e10deda6b9f284081e8"
+                "url": "https://github.com/codefii/cindy.git",
+                "reference": "6d3a75808e1224d8888d599ac528ca02e1533916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codefii/framework/zipball/de884632792bc15f076e8e10deda6b9f284081e8",
-                "reference": "de884632792bc15f076e8e10deda6b9f284081e8",
+                "url": "https://api.github.com/repos/codefii/cindy/zipball/6d3a75808e1224d8888d599ac528ca02e1533916",
+                "reference": "6d3a75808e1224d8888d599ac528ca02e1533916",
                 "shasum": ""
             },
             "type": "project",
@@ -43,7 +43,7 @@
                 "codefii",
                 "superfast framework"
             ],
-            "time": "2018-07-10T18:39:33+00:00"
+            "time": "2018-07-15T09:21:31+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -658,20 +658,21 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.8",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7b604c89da162034bdf4bb66310f358d313dd16d"
+                "reference": "6a5f676b77a90823c2d4eaf76137b771adf31323"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7b604c89da162034bdf4bb66310f358d313dd16d",
-                "reference": "7b604c89da162034bdf4bb66310f358d313dd16d",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6a5f676b77a90823c2d4eaf76137b771adf31323",
+                "reference": "6a5f676b77a90823c2d4eaf76137b771adf31323",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
+                "symfony/polyfill-ctype": "^1.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
@@ -682,7 +683,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -711,16 +712,16 @@
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "homepage": "https://twig.symfony.com/contributors",
                     "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
+            "homepage": "https://twig.symfony.com",
             "keywords": [
                 "templating"
             ],
-            "time": "2018-04-02T09:24:19+00:00"
+            "time": "2018-07-13T07:18:09+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -776,9 +777,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "codefii/framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
