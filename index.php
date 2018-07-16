@@ -3,7 +3,7 @@
 require 'vendor/autoload.php';
 require_once 'vendor/codefii/core/src/Network/Debugger/Error.php';
         \php_error\reportErrors();
-require_once 'App/Routes/Routes.php';
+require_once 'App/routes/Routes.php';
 $uri = urldecode(
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
 );
