@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
-        "codefii/core": "1.0",
+        "codefii/core": "1.1",
         "phpmailer/phpmailer": "^5.0",
         "phpunit/phpunit": "3.7.*",
         "twig/twig": "^2.0",
