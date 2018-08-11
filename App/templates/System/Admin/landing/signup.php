@@ -25,7 +25,7 @@
         <input type="password" class="cf-control" name="confirm_password" placeholder="Confirm Password">
       </div>
       <div class="form-group">
-        <button type="submit" class="cfbtn cfbtn-primary"name="button">LOGIN</button>
+        <button type="submit" class="cfbtn cfbtn-primary"name="button">SIGN UP</button>
       </div>
     </form>
   </div>
