@@ -8,38 +8,83 @@
 
 ## About Codefii
 
+Codefii is a web application framework for PHP. It provides a beautifully expressive and easy to use tools for backend development and Apis.
 
-Codefii is a stunningly fast high-level  web framework that encourages rapid development and includes everything needed to create database-backed web applications.
+---
 
-Under the hood, codefii has a generic admin called **FiiA** that helps in managing database records. it's somewhat known as active admin.
-___
+## Introduction
 
+Codefii having two phrases **code** and **fii** (pronounced : fire 🔥 ) is a PHP framework for building website backend. It consists of approachable and easy to use libraries that helps you tackle complex problems with just few lines of codes.
 
+## Documentation
 
-### Getting started
+After pulling the Codefii skeletal project, am pretty sure you would be curious to make something cool with it, now let's get to it quickly.
 
-Before anything else, you need a copy of composer installed on local machine through [composer](http://getcomposer.org).For existing applications you can run the following:
+- Before getting started, it's essential you understand how the folder is arranged and what they represent. There are three basic folders namely :
 
+- **app**
+- **web**
+- **vendor**
+
+#### The App Directory
+
+The app directory contains **Controllers**, **Views** and **Models** where you'll focus more on when building any project with Codefii
+
+#### The Web Directory
+
+The web directory contains static files such as images, javascript and css files.
+
+### The Vendor Directory
+
+I think it's better to ignore the vendor directory as it contains the primary engine of Codefii.
+
+## Creating a controller
+
+Create a file named **WelcomeController.php** in _App\Controllers_ directory and add the following code:
+
+```php
+namespace App\Controllers;
+use App\Controllers\Controller;
+class WelcomeController extends Controller{
+    public function home(){
+        echo "Hello World!";
+    }
+}
 ```
-composer create-project --prefer-dist codefii/codefii myApp
+
+## Creating route
+
+Moving to the next step, route. To initiate a route that matches your controller, open _App/routes/routes.php_ and make changes where possible.
+
+```php
+
+$router = new Codefii\Http\Router();
+$router->setNamespace('App\Controllers');
+$router->get('/','Welcome.home');
 ```
 
-### Running your project
+## Using fii cli command
 
-After a successful installation of the codefii components, the next thing is to navigate to your app directory and serve / run your app by using:
+At this point, you're almost close to done, open up a terminal in your current working directory and type
 
-```
-cd myApp
+```php
 php fii --serve
 ```
-then visit your browser and type:
-```
-localhost:8080
-```
-### Running App with a Dynamic Port
-```
-cd myApp
-php fii --serve --port=your_port_number
-```
-### Documentation
-The complete documentation is found on [Codefii Official Website](https://codefii.com/documentaion)
+
+Then navigate to your browser and access the page on **localhost:8000**
+
+### 🔥 Community
+
+Join the welcoming community of fellow Codefii developers on [Slack](http://codefii.slack.com).
+
+### 🚀 Contributing
+
+To contribute a **feature or idea** to Codefii, [create an issue](https://github.com/codefii/codefii/issues/new) explaining your idea.
+
+### 🏫 Tutorials
+
+The awesome Codefii community is always adding new tutorials and articles out there, [Learn Codefii](http://learn.codefii.com) is a great place to get started as a beginner.
+
+### 👥 Backers
+
+Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/codefii#backer)]
