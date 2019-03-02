@@ -33,7 +33,8 @@ class AddPostsController extends Controller {
        * [View description]
        * @var [type]
        */
-      View::render("System/Admin/header/header");
+      Office::AuthorisedUser();
+      View::render("System/Admin/header/header",['value'=>Office::getSessionName()]);
       View::render("System/Admin/office/addposts",
       ['columns'=>$fii_validator->returnModel(),'cols'=>$fii_validator->getColumns()]);
       /******************************************************

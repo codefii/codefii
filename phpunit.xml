@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit backupGlobals="false"
-         backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
-         colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false">
-    <testsuites>
-        <testsuite name="Unit">
-            <directory suffix="DemoTest.php">./tests</directory>
-        </testsuite>
-    </testsuites>
-
+<!-- <?xml version"1.0" encoding="UTF-8" ?> -->
+<phpunit bootstrap="vendor/autoload.php"
+colours="true"
+verbose="true"
+stopOnFailure="true">
+    <testsuits>
+        <testsuit>
+            <directory name="unit">tests</directory>
+        </testsuit>
+    </testsuits>
 </phpunit>
