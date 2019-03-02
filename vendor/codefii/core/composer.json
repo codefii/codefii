@@ -1,0 +1,26 @@
+{
+    "name": "codefii/core",
+        "description": "A superfast php framework for web Ninjas",
+        "keywords": [ "superfast framework","codefii"],
+        "homepage": "https://codefii.com",
+        "type": "project",
+        "license": "MIT",
+        "repositories": [
+            {
+                "type": "vcs",
+                "url":  "https://github.com/codefii/framework"
+            }
+          ],
+        "authors": [
+            {
+                "name": "Prince E. Darlington",
+                "email": "ekeminyd@gmail.com",
+                "homepage": "https://iamcoderisk.codefii.com"
+            }
+        ],
+    "autoload": {
+        "psr-4": {
+            "Codefii\\": "src/Network/"
+        }
+    }
+}
