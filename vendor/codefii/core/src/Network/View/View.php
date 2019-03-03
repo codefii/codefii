@@ -32,7 +32,7 @@ class View
     {
         if(is_callable($args)){ 
           self::$datas= $args();
-        list($page,$fileName) = explode('.',$view);
+        list($page,$fileName) = sizeof(explode("/", $view)) > 1 ? explode("/", $view) : explode(".", $view);
         extract(self::$datas, EXTR_SKIP);
         $file = "App/templates/$page/$fileName.php";
         if (is_readable($file)) {
@@ -41,7 +41,7 @@ class View
             echo $file."<h2>404 not found</h2>";
         }
         }else if(is_array($args)){
-        list($page,$fileName) = explode('.',$view);
+        list($page,$fileName) = sizeof(explode("/", $view)) > 1 ? explode("/", $view) : explode(".", $view);
         self::$datas = $args;
         extract($args, EXTR_SKIP);
         $file = "App/templates/$page/$fileName.php";
