@@ -1,0 +1,16 @@
+  _____          _      ______ _ _ 
+ / ____|        | |    |  ____(_|_)
+| |     ___   __| | ___| |__   _ _ 
+| |    / _ \ / _` |/ _ \  __| | | |
+| |___| (_) | (_| |  __/ |    | | |
+ \_____\___/ \__,_|\___|_|    |_|_|
+  
+ CodeFii v2
+                                 
+ Usage  php fii [command]
+ 
+     --quote                Generate Random Beautiful  quotes from Codefii
+     --create               Generate Controller.
+     --serve                Display your project on the browser using the defualt port
+     --serve --port<number> Display your project on the browser using any port of your choice
+                                   
