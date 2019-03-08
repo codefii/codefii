@@ -10,7 +10,7 @@
  Usage  php fii [command]
  
      --quotes                Generate Random Beautiful  quotes from Codefii
-     --create               Generate Controller.
+     --create=type -n=filename Generate model and controller by initiating this command
      --serve                Display your project on the browser using the defualt port
      --serve --port<number> Display your project on the browser using any port of your choice
                                    
